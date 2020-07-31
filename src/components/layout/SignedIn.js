@@ -5,13 +5,19 @@ import { signOut } from '../../store/actions/authAction'
 const SignedIn = (props) => {
     
     return(
-        <ul className="right">
-              <li><NavLink to='/about'>About Us</NavLink></li>
-            <li><NavLink to='/service'>Services</NavLink></li>
-            <li><NavLink to='/book'>Book</NavLink></li>
-            <li><a onClick={props.signOut}>Log Out</a></li>
-            <li><NavLink to='/' className='btn btn-floating green lighten-1'> {props.profile.initials} </NavLink></li>
+        <div className="collapse navbar-collapse" id="navbarNav">
+        <ul className="navbar-nav">
+            <li className="nav-item active"><NavLink className="nav-link" to='/'><h3>Home &ensp; &emsp;</h3></NavLink></li>
+            <li className="nav-item active"><NavLink className="nav-link" to='/about'><h3>About Us &ensp; &emsp;</h3></NavLink></li>
+            <li className="nav-item active"><NavLink className="nav-link" to='/service'><h3>Services &ensp;&emsp; </h3></NavLink></li>
+           
+            <li className="nav-item active"><NavLink className="nav-link" to='/book'><h3>Book &emsp;&ensp; </h3></NavLink></li>
+            <li className="nav-item active"><NavLink className="nav-link" to='/product'><h3>Products&emsp;&ensp;</h3></NavLink></li>
+            <li className="nav-item active"><a className="nav-link" onClick={props.signOut}><h3>Log Out &emsp; &ensp;</h3></a></li>
+
         </ul>
+        </div>
+        
     )
 }
 

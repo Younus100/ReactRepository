@@ -24,3 +24,319 @@ form {
   margin-bottom: 20px;
   margin-left: 20px;
 }
+
+body {
+  background-color: #e8eddf;
+}
+
+img{
+  position: relative;    
+}
+
+.services-sub{
+  color: darkgrey;  
+}
+
+.zoom:hover {
+  transform: scale(1.15); 
+  z-index: 3;
+}
+
+.imgborder {
+  border: 2px solid gold;
+}
+
+.vertical-center {
+  padding-top: 30%;
+  padding-left: 15%;
+  padding-right: 10%
+}
+
+.btn-gold {
+  background-color: #aa9144;
+  color: white;
+  border-radius: 25px;
+}
+
+.carousel-inner img{
+  margin: auto;
+}
+
+#bottom {
+  background-color: #aa9144;
+  margin: auto;
+}
+
+.fa {
+padding: 20px;
+font-size: 30px;
+width: 30px;
+text-align: center;
+text-decoration: none;
+margin: auto;
+border-radius: 50%;
+  display: inline-block;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.wrapper {
+  width: 100%;
+  height: auto;
+}
+
+.parallax-window {
+  min-height: 400px;
+  background: transparent;
+}
+
+
+
+@media only screen and (max-width: 992px) {
+  .vertical-center{
+      padding-top: 10%;
+      padding-left: 15%;
+      padding-right: 5%
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .vertical-center{
+      padding-top: 2%;
+      padding-bottom: 2%;
+  }
+  
+  .vertical-center h1{
+      font-size: 30px;
+  }
+  
+}
+body {
+  background-color: #e8eddf;
+}
+
+img {
+  width: 100%;
+}
+
+.wrapper {
+  width: 100%;
+  height: 300px;
+}
+
+.parallax-window {
+  min-height: 400px;
+  background: transparent;
+}
+
+.row img{
+  width: 25%;
+}
+
+.checked {
+color: orange !important;
+}
+
+.serif {
+font-family: "Times New Roman", Times, serif !important; 
+}
+
+.fa-star {
+  color: gray;
+}
+
+hr{
+  width:50%;
+}
+
+.italic {
+  font-style: italic !important;
+}
+
+#bottom {
+  background-color: #aa9144;
+  margin: auto;
+}
+
+#bottom .fa {
+padding: 20px;
+font-size: 30px;
+width: 30px;
+text-align: center;
+text-decoration: none;
+margin: auto;
+border-radius: 50%;
+  display: inline-block;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+@media only screen and (max-width: 768px) {
+  #testimonials .py-5{
+      padding-top: 3px !important;
+      padding-bottom: 3px !important;
+  }
+  #testimonials .pt-4{
+      padding-top: 3px !important;
+  }
+}
+
+#bevel-menu {
+  background-color: #cfcfc3;
+  color: #232323;
+}
+
+#bevel-menu .navbar {
+	padding: 0px;
+  }
+
+#bevel-menu img {
+  height: 40px;
+}
+
+#bevel-menu a {
+  color: black;
+  font-weight: bold;
+  padding-left: 65px;
+  cursor: pointer; 
+}
+
+#bevel-menu .toggleable-nav{
+	transition: max-height 1350ms ease-in-out;
+}
+
+.toggleable-show.toggleable-hide{
+	display: block;
+	animation: fade-out .5s 1;
+}
+
+#bevel-menu .toggleable-hide{
+	display:none;
+}
+
+
+#bevel-menu  .trigger-menu-wrapper .fas {
+  padding: 12px;
+}
+
+#bevel-menu  .trigger-menu-wrapper  {
+	background-color: black;
+	color: white;
+	width: 100%;
+	height: 40px;
+	scroll-margin-bottom: 15px;
+}
+
+.backgroundmain {
+	background-image: url("/public/img/backimage.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	height: 100%;
+	
+	opacity: 0.94; 
+	background-color: rgb(50, 50, 50);
+  }
+
+  #bevel-main .carousel-inner {
+	  
+	  height: 600px;	  
+
+  }
+
+  #bevel-main .carousel {
+	
+    padding: 50px;
+
+}
+  #bevel-main  .bevel-main-info{
+	  color: rgba(0, 0, 0, 0.9);
+	  font-weight: bold;
+	  font-size: 1.1em;
+	  padding-top: 140px;
+	  padding-left: 100px;
+  }
+
+  .backgroungservice {
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/public/img/bevel-slider-3-2000x1125-87.jpg');
+	/* opacity: .9;
+    background-color: rgb(34, 34, 34);
+	background-image: url("images/bevel-slider-3-2000x1125-87.jpg");  */
+	padding-top: 6px; padding-bottom: 80px;
+	height: 1130px;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	/* filter: grayscale(60%); */
+	/* opacity: 0.9;  */
+
+  }
+
+  #bevel-service .card-service {
+	padding-top: 10px;
+	width: 18rem;
+	background: transparent;
+  }
+
+  #bevel-service .card {
+    text-align: center;
+	background: transparent;
+  }
+
+  #bevel-service  .feature-title {
+	  color: white;
+	  align-content: space-around;
+  }
+
+  #bevel-service  .feature-text{
+	padding-top: 30px;
+	color: white;
+	align-content: space-around;
+  }
+
+  .service-title {
+	  color: white;
+	  font-weight: bold;
+	  font-size: 2.8em;
+  }
+
+
+  #bevel-samples image{
+	  width: 100%;
+  }
+
+  .backgroungsample{
+	  background-color: 	#534F4E;
+  }
+
+  .backgroundprice {
+	background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)), url('/public/img/pexels-photo-2000x1333.jpg');
+	height: 100%;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+  }
+
+  #bevel-price  table{
+	margin: 50px;;
+	widows: 100px;
+	
+  }
+
+  #bevel-price  td{
+	color: white;
+	font-size: 1.6em;;
+	
+  }
+
+  #bevel-price  th{
+	color: white;
+	font-size: 2.5em;;
+	
+  }
+
+  .background-fotter{
+	background-color: #cfcfc3;
+	color: #232323;	  
+  }

@@ -8,13 +8,15 @@ const Navbar = (props) => {
     const { auth ,profile } =props
     const links = auth.uid ? <SignedIn profile={ profile }/> : <SignedOut />
     return(
-        <nav className="nav-wrapper grey darken-3">
-            <div className="container">
-                <Link to='/' className="brand-logo">BarberShop</Link>
-                {auth.isLoaded && 
+        <nav class="navbar navbar-expand-lg navbar-light brown">
+                <Link to='/' className="navbar-brand"><h1>BarberShop&ensp;</h1></Link>
+                <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span className="navbar-toggler-icon"></span>
+     </button>
+                { auth.isLoaded && 
                    links
                 }
-            </div>
+
         </nav>
     )
 }

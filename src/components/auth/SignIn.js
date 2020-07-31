@@ -19,13 +19,12 @@ class SignIn extends Component {
     handleSubmit = (e) => {
         e.preventDefault();
         this.props.signIn(this.state)
-        
     }
 
     
     render() { 
         const { authError ,auth} = this.props
-
+        if(auth.uid) return <Redirect to='/' />
         return (  
             <div className="container">
                 <form className="white" onSubmit={this.handleSubmit}>
@@ -39,16 +38,14 @@ class SignIn extends Component {
                         <input type="password" id="password" onChange={this.handleChange} />
                     </div>
                     <div className="input-field">
-                        <button className='btn pink lighten-1 z-depth-0'>LogIn</button>
+                        <button className='btn brown lighten-1 z-depth-0'>LogIn</button>
                             <div className="red-text center">
                                 { authError ? <p> {authError} </p>: null}                           
                             </div> 
                     </div>
                 </form>
-                
-
-
-                
+               
+    
             </div>
         );
     }

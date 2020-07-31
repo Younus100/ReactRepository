@@ -1,3 +1,5 @@
+import { Redirect } from "react-router-dom";
+
 const initstate ={
     authError: null
 }
@@ -11,17 +13,18 @@ const authreducer = (state=initstate,action) => {
                 authError: 'Logon failed'
             }
         case 'LOGIN_SUCESS':
-            console.log('login sucess');
+            
             return {
                 ...state,
                 authError: null
+
             }
         case 'SIGNOUT_SUCESS':
             console.log('signout sucess');
             return state;
 
         case 'SIGNUP_SUCESS':
-            console.log('signup Sucess')
+            
             return {
                 ...state,
                 authError: null
